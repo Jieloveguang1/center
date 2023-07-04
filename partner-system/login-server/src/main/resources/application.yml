@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: login-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/login-server
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 1741534553A
+server:
+  port: 8081
+

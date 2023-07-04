@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: team-server
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/team_server
+    username: root
+    password: 1741534553A
+  redis:
+    host: localhost
+    database: 0
+    port: 6379
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+  global-config:
+    db-config:
+      #默认使用的是 assign_id,设置为auto,主键id自增
+      id-type: auto
+logging:
+  level:
+    com.lhj.mapper: DEBUG
+server:
+  port: 8085
